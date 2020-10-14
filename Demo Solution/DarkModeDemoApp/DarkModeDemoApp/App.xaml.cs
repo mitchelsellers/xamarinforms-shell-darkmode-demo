@@ -11,6 +11,7 @@ namespace DarkModeDemoApp
 
         public App()
         {
+            Xamarin.Forms.Device.SetFlags(new string[] { "AppTheme_Experimental" });
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
